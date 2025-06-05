@@ -1,4 +1,4 @@
-        
+       <script> 
         // Language translations
         const languages = {
             en: {
@@ -2172,4 +2172,6 @@ document.addEventListener('DOMContentLoaded', function() {
     return emailRegex.test(email);
   }
 });
+
+</script> 
 
