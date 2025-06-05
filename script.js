@@ -1,4 +1,3 @@
-<script>
         
         // Language translations
         const languages = {
@@ -2174,5 +2173,3 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-
-    </script>
