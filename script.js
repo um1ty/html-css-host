@@ -1,5 +1,5 @@
-       <script> 
-        // Language translations
+- <script>
+       // Language translations
         const languages = {
             en: {
                 name: "English",
@@ -2173,5 +2173,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-</script> 
+- </script>
 
