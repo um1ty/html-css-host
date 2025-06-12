@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
   
   * {
     margin: 0;
@@ -51,6 +51,18 @@
     letter-spacing: 3px;
     margin-bottom: 1rem;
   }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: #a0d8e8;
+    margin-bottom: 0.5rem;
+  }
+
+  .effective-date {
+    font-size: 1rem;
+    color: #00ffff;
+    font-weight: 700;
+  }
   
   .card {
     background: rgba(0, 20, 40, 0.8);
@@ -77,6 +89,35 @@
     line-height: 1.6;
     color: #a0d8e8;
     margin-bottom: 1rem;
+  }
+
+  .contact-list {
+    list-style: none;
+    padding-left: 1rem;
+  }
+
+  .contact-list li {
+    color: #a0d8e8;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+
+  .contact-list li::before {
+    content: '●';
+    color: #00ffff;
+    font-weight: bold;
+    position: absolute;
+    left: -1rem;
+  }
+
+  .contact-list a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .contact-list a:hover {
+    text-shadow: 0 0 10px #00ffff;
   }
   
   .back-button {
