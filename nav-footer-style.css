@@ -167,13 +167,15 @@
 } */
 
 
+/* UPDATED: Footer Base Styles */
 .futuristic-footer {
     background: linear-gradient(135deg, #0d2038 0, #1a3250 50%, #0d2038 100%);
     color: rgba(255, 255, 255, 0.9);
     position: relative;
     overflow: hidden;
     margin-top: 4rem;
-    width: 100%;  /* Keep this as 100% not 100vw */
+    width: 100%;
+    font-family: Rajdhani, Orbitron, sans-serif;
 }
 
 /* .footer-container {
@@ -211,6 +213,15 @@
 
 .company-info {
     max-width: 350px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    margin-left: 0;
+
 }
 .footer-logo {
     margin-bottom: 1.5rem;
@@ -267,6 +278,8 @@
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 1.5px;
+    width: 100%;
+
 }
 .title-text {
     color: #0ff;
@@ -299,24 +312,46 @@
 .footer-links {
     list-style: none;
     padding: 0;
+    padding-left: 0 !important;  /* ← Add this */
     margin: 0;
+    margin-left: 0 !important;   /* ← Add this */
+    width: 100%;
+    text-align: left;            /* ← Add this */
 }
+
+
 .footer-links li {
     margin-bottom: 0.8rem;
+    text-align: left;
+    padding-left: 0;  /* ← Add this line */
+    margin-left: 0;   /* ← Add this line */
+    padding: 0;
+    list-style: none;
+
 }
+
+
 .footer-link {
-    display: inline-block;
+    display: block;        /* ← Change this line */
     padding: 0.3rem 0;
+    position: relative;
+    transition: 0.3s;
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+
 }
+
 .footer-link:hover {
     color: #0ff;
-    padding-left: 8px;
     text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
+
 .footer-link::before {
     content: "";
     position: absolute;
-    left: -15px;
+    left: -12px; /* Change from -15px to -12px */
     top: 50%;
     transform: translateY(-50%);
     width: 0;
@@ -325,13 +360,20 @@
     transition: width 0.3s;
 }
 .footer-link:hover::before {
-    width: 10px;
+    width: 8px; /* Change from 10px to 8px */
 }
 .newsletter-section {
     max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
 .newsletter-text {
     margin-bottom: 1.5rem;
+    text-align: left;
+    width: 100%;
+
 }
 .input-container {
     display: flex;
@@ -616,3 +658,18 @@
         transform: translateX(5px);
     }
 }
+
+
+
+/* NEW: Footer Wrapper for Full Width */
+.footer-wrapper {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
